@@ -12,7 +12,7 @@
 theme: glassmorphism
 
 # HTML <html lang> attribute
-lang: "en"
+lang: "pt-br"
 
 # Force a color scheme regardless of the visitor's system appearance:
 #   auto  — follow OS (default; the page auto-switches between light/dark)
@@ -60,7 +60,7 @@ plugins:
   # podcasts...). Returns an array of { title, url, date } per feed URL.
   # Iterate inside theme index.html with {% for item in vars.RSSFeedPlugin[...] %}.
   - RSSFeedPlugin:
-      - https://en.zhgchg.li/feed.xml
+      - https://www.ilhabela.sp.gov.br/portal/rss
 
   # Days until / since a target date. Hash-style — labels become keys.
   # Use as: {{ vars.CountdownPlugin.label.days }}, .target, .passed
@@ -71,7 +71,7 @@ plugins:
   # Use as: {{ vars.YouTubeChannelLatestVideoPlugin['@handle'].title }}
   #         {{ vars.YouTubeChannelLatestVideoPlugin['@handle'].url }}
   - YouTubeChannelLatestVideoPlugin:
-      - "@zhgchgli"
+      - "https://www.youtube.com/@PrefeituradeIlhabelaOficial"
 
 # -----------------------------------------------------------------------------
 # Tracking
@@ -81,12 +81,11 @@ google_analytics_id:
 # -----------------------------------------------------------------------------
 # Profile header
 # -----------------------------------------------------------------------------
-title: "ZhgChgLi's Links"
+title: "Ilhabela"
 avatar: "./images/profile.jpeg"
-name: "@zhgchgli"
+name: "Prefeitura de ilhabela"
 tagline: >-
-    An iOS, web, and automation developer from Taiwan 🇹🇼 who also loves sharing, traveling, and writing.
-    Followed by {{ vars.GithubProfilePlugin['ZhgChgLi'].followers }} on GitHub across {{ vars.GithubProfilePlugin['ZhgChgLi'].repos }} public repos.
+    Capital Nacional da Vela.
 
 # -----------------------------------------------------------------------------
 # Links
@@ -97,63 +96,71 @@ tagline: >-
 #   alt   — accessibility text
 #   target — `_blank` (new tab) or `_self`
 # -----------------------------------------------------------------------------
+  # → uses GithubRepoStarsCountPlugin
+##  - link:
+##      icon: "fa-brands fa-swift"
+##      text: "ZMarkupParser <span class='link-button-text'>({{vars.GithubRepoStarsCountPlugin['ZhgChgLi/ZMarkupParser']}} Stars)</span>"
+##      url: "https://github.com/ZhgChgLi/ZMarkupParser"
+##      alt: "ZMarkupParser is a pure-Swift library that helps you to convert HTML strings to NSAttributedString with customized style and tags."
+##      title: "ZMarkupParser is a pure-Swift library that helps you to convert HTML strings to NSAttributedString with customized style and tags."
+##      target: "_blank"
+##  - link:
+##      icon: "fa-brands fa-app-store-ios"
+##      text: "ZReviewTender <span class='link-button-text'>({{vars.GithubRepoStarsCountPlugin['ZhgChgLi/ZReviewTender']}} Stars)</span>"
+##      url: "https://github.com/ZhgChgLi/ZReviewTender"
+##      alt: "ZReviewTender is a tool for fetching app reviews from the App Store and Google Play Console and integrating them into your workflow."
+##      title: "ZReviewTender is a tool for fetching app reviews from the App Store and Google Play Console and integrating them into your workflow."
+##      target: "_blank"
+##  - link:
+##      icon: "fa-brands fa-markdown"
+##      text: "ZMediumToMarkdown <span class='link-button-text'>({{vars.GithubRepoStarsCountPlugin['ZhgChgLi/ZMediumToMarkdown']}} Stars)</span>"
+##      url: "https://github.com/ZhgChgLi/ZMediumToMarkdown"
+##      alt: "ZMediumToMarkdown is a powerful tool that allows you to effortlessly download and convert your Medium posts to Markdown format."
+##      title: "ZMediumToMarkdown is a powerful tool that allows you to effortlessly download and convert your Medium posts to Markdown format."
 links:
   - link:
-      icon: "fa-solid fa-rss"
-      text: "Tech Blog <span class='link-button-text'>(120+ Posts)</span>"
-      url: "https://zhgchg.li"
-      alt: "ZhgChgLi Tech & Travel Blog"
-      title: "ZhgChgLi Tech & Travel Blog"
+      icon: "fa-solid fa-wifi"
+      text: "Conecte-se ao WiFi<span class='link-button-text'>Ilhabela Conectada</span>"
+      url: "http://neverssl.com"
+      alt: "Conecte-se ao WiFi"
+      title: "Wifi - Ilhabela Conectada"
       target: "_blank"
 
-  # → uses GithubRepoStarsCountPlugin
-  - link:
-      icon: "fa-brands fa-swift"
-      text: "ZMarkupParser <span class='link-button-text'>({{vars.GithubRepoStarsCountPlugin['ZhgChgLi/ZMarkupParser']}} Stars)</span>"
-      url: "https://github.com/ZhgChgLi/ZMarkupParser"
-      alt: "ZMarkupParser is a pure-Swift library that helps you to convert HTML strings to NSAttributedString with customized style and tags."
-      title: "ZMarkupParser is a pure-Swift library that helps you to convert HTML strings to NSAttributedString with customized style and tags."
-      target: "_blank"
-  - link:
-      icon: "fa-brands fa-app-store-ios"
-      text: "ZReviewTender <span class='link-button-text'>({{vars.GithubRepoStarsCountPlugin['ZhgChgLi/ZReviewTender']}} Stars)</span>"
-      url: "https://github.com/ZhgChgLi/ZReviewTender"
-      alt: "ZReviewTender is a tool for fetching app reviews from the App Store and Google Play Console and integrating them into your workflow."
-      title: "ZReviewTender is a tool for fetching app reviews from the App Store and Google Play Console and integrating them into your workflow."
-      target: "_blank"
-  - link:
-      icon: "fa-brands fa-markdown"
-      text: "ZMediumToMarkdown <span class='link-button-text'>({{vars.GithubRepoStarsCountPlugin['ZhgChgLi/ZMediumToMarkdown']}} Stars)</span>"
-      url: "https://github.com/ZhgChgLi/ZMediumToMarkdown"
-      alt: "ZMediumToMarkdown is a powerful tool that allows you to effortlessly download and convert your Medium posts to Markdown format."
-      title: "ZMediumToMarkdown is a powerful tool that allows you to effortlessly download and convert your Medium posts to Markdown format."
-      target: "_blank"
+##      target: "_blank"
 
   # → uses GithubRepoStarsCountPlugin + GithubLastCommitPlugin
   - link:
-      icon: "fa-brands fa-github"
-      text: "linkyee <span class='link-button-text'>({{vars.GithubRepoStarsCountPlugin['ZhgChgLi/linkyee']}} ⭐ · last update {{ vars.GithubLastCommitPlugin['ZhgChgLi/linkyee'].date }})</span>"
-      url: "https://github.com/ZhgChgLi/linkyee"
-      alt: "linkyee is a fully customized, open-source LinkTree alternative deployed directly on GitHub Pages."
-      title: "linkyee is a fully customized, open-source LinkTree alternative deployed directly on GitHub Pages."
+      icon: "fa-solid fa-cloud"
+      text: "Projeto - Ilhabela Conectada <span class='link-button-text'>Wifi para todos</span>"
+      url: "https://www.ilhabela.sp.gov.br/wifi#rede"
+      alt: "Projeto Ilhabela Conectada - Wifi para todos"
+      title: "Projeto Ilhabela Conectada - Wifi para todos"
       target: "_blank"
+
+  - link:
+     icon: "fa-solid fa-globe"
+     text: "Website Prefeitura de Ilhabela<span class='link-button-text'></span>"
+     url: "https://www.ilhabela.sp.gov.br"
+     alt: "Projeto Ilhabela Conectada - Wifi para todos"
+     title: "Projeto Ilhabela Conectada - Wifi para todos"
+     target: "_blank"
 
   # → uses RSSFeedPlugin (latest blog post). `latest: true` opts into the
   #   theme's "LATEST" badge styling.
   - link:
       icon: "fa-solid fa-newspaper"
-      text: "{{ vars.RSSFeedPlugin['https://en.zhgchg.li/feed.xml'][0].title }}"
-      url: "{{ vars.RSSFeedPlugin['https://en.zhgchg.li/feed.xml'][0].url }}"
-      alt: "Latest blog post by ZhgChgLi"
-      title: "Latest blog post"
+      text: "{{ vars.RSSFeedPlugin['https://www.ilhabela.sp.gov.br/portal/rss'][0].title }}"
+      url: "{{ vars.RSSFeedPlugin['https://www.ilhabela.sp.gov.br/portal/rss'][0].url }}"
+      alt: "Noticias Prefeitura de Ilhabela"
+      title: "RSS Prefeitura de Ilhabela"
       target: "_blank"
       latest: true
 
   # → uses YouTubeChannelLatestVideoPlugin
   - link:
       icon: "fa-brands fa-youtube"
-      text: "{{ vars.YouTubeChannelLatestVideoPlugin['@zhgchgli'].title }}"
-      url: "{{ vars.YouTubeChannelLatestVideoPlugin['@zhgchgli'].url }}"
+      text: "{{ vars.YouTubeChannelLatestVideoPlugin['https://www.youtube.com/@PrefeituradeIlhabelaOficial'].title }}"
+      url: "{{ vars.YouTubeChannelLatestVideoPlugin['https://www.youtube.com/@PrefeituradeIlhabelaOficial'].url }}"
       alt: "Latest YouTube video"
       title: "Latest YouTube video"
       target: "_blank"
@@ -163,51 +170,51 @@ links:
 # Social media buttons
 # -----------------------------------------------------------------------------
 socials:
+##  - social:
+##      icon: "fa-brands fa-medium"
+##      url: "https://blog.zhgchg.li"
+##      title: "ZhgChgLi's Medium"
+##      alt: "ZhgChgLi's Medium"
+##      target: "_blank"
   - social:
-      icon: "fa-brands fa-medium"
-      url: "https://blog.zhgchg.li"
-      title: "ZhgChgLi's Medium"
-      alt: "ZhgChgLi's Medium"
+      icon: "fa-brands fa-tiktok"
+      url: "https://www.tiktok.com/@prefeituradeilhabela"
+      title: "Prefeitura de Ilhabela TikTok"
+      alt: "Prefeitura de Ilhabela TikTok"
       target: "_blank"
   - social:
-      icon: "fa-brands fa-github"
-      url: "https://github.com/ZhgChgLi"
-      title: "ZhgChgLi's GitHub"
-      alt: "ZhgChgLi's GitHub"
+      icon: "fa-brands fa-facebook"
+      url: "https://www.facebook.com/PrefeituraIlhabela"
+      title: "Facebook Prefeitura de Ilhabela"
+      alt: "Facebook Prefeitura de Ilhabela"
       target: "_blank"
   - social:
-      icon: "fa-brands fa-twitter"
-      url: "https://twitter.com/zhgchgli"
-      title: "ZhgChgLi's Twitter"
-      alt: "ZhgChgLi's Twitter"
-      target: "_blank"
-  - social:
-      icon: "fa-brands fa-linkedin"
-      url: "https://www.linkedin.com/in/zhgchgli/"
-      title: "ZhgChgLi's LinkedIn"
-      alt: "ZhgChgLi's LinkedIn"
+      icon: "fa-brands fa-youtube"
+      url: "https://www.youtube.com/@PrefeituradeIlhabelaOficial"
+      title: "Prefeitura de Ilhabela YouTube"
+      alt: "Prefeitura de Ilhabela YouTube"
       target: "_blank"
   - social:
       icon: "fa-brands fa-instagram"
-      url: "https://www.instagram.com/zhgchgli/"
+      url: "https://www.instagram.com/prefeituradeilhabelaoficial/"
       title: "Instagram"
-      alt: "ZhgChgLi's Instagram"
+      alt: "Instagram Prefeitura de Ilhabela"
       target: "_blank"
   - social:
       icon: "fa-solid fa-envelope"
-      url: "mailto:zhgchgli@gmail.com"
-      title: "Email: zhgchgli@gmail.com"
-      alt: "zhgchgli@gmail.com"
+      url: "mailto:protocolo@ilhabela.sp.gov.br"
+      title: "Email: protocolo@ilhabela.sp.gov.br"
+      alt: "protocolo@ilhabela.sp.gov.br"
       target: "_blank"
 
 # -----------------------------------------------------------------------------
 # Footer (uses CountdownPlugin)
 # -----------------------------------------------------------------------------
 footer: >
-    Hi there! Follow me on Medium or GitHub, or stay connected on Instagram or LinkedIn.
-    <br>linkyee has been live for {{ vars.CountdownPlugin.linkyee_release.days }} days. 🎉
+    R. Prefeito Mariano Procópio de Araújo Carvalho, 86 - Perequê<br>Ilhabela - SP, 11630-000
+    <br>Razão Social: Prefeitura Municipal de Ilhabela<br>CNPJ: 46.482.865/0001-32
 
 # Footer copyright message
 # Linkyee is a 100% free, open-source project—feel free to modify the copyright message as you like. :)
 copyright: >
-  © {{ year }} <a href="https://link.zhgchg.li" target="_blank">ZhgChgLi</a>. Powered by <a href="https://github.com/ZhgChgLi/linkyee" target="_blank">linkyee</a>
+  © {{ year }} <a href="https://link.zhgchg.li" target="_blank">ZhgChgLi</a>. Powered by <a href="https://github.com/ZhgChgLi/linkyee" target="_blank">linkyee</a> Customized for <a href="https://www.ilhabela.sp.gov.br" target="_blank">Prefeitura de Ilhabela</a> by <a href="https://github.com/antoniowf" target="_blank">AntonioWF</a>.
