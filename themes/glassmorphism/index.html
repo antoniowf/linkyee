@@ -59,7 +59,7 @@
     <nav class="links" aria-label="{{ ui.primary_links | default: 'Primary links' }}">
       {% for item in links %}
         {% assign link = item.link %}
-        <a href="{{ link.url }}" target="{{ link.target }}" class="card link-button{% if link.latest %} link-latest{% endif %}" alt="{{ link.alt }}" title="{{ link.title }}">
+        <a href="{{ link.url }}" target="{{ link.target }}" class="card link-button{% if link.latest %} link-latest{% endif %}{% if link.icon contains 'fa-wifi' %} link-wifi{% endif %}" alt="{{ link.alt }}" title="{{ link.title }}">
           {% if link.latest %}<span class="link-latest-badge" aria-hidden="true">{{ ui.latest | default: 'LATEST' }}</span>{% endif %}
           <span class="link-icon" aria-hidden="true"><i class="{{ link.icon }}"></i></span>
           <span class="link-text">{{ link.text }}</span>

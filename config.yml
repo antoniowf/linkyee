@@ -20,7 +20,7 @@ lang: "pt-br"
 #   dark  — always render dark mode
 # Note: dark-first themes (e.g. terminal-retro) ignore "light" — their
 # whole identity is the dark palette.
-color_scheme: auto
+color_scheme: dark
 
 # -----------------------------------------------------------------------------
 # Plugins — every built-in plugin is shown below as a working example.
@@ -85,7 +85,7 @@ title: "Ilhabela"
 avatar: "./images/profile.jpeg"
 name: "Prefeitura de ilhabela"
 tagline: >-
-    Capital Nacional da Vela.
+    Capital Nacional da Vela
 
 # -----------------------------------------------------------------------------
 # Links
