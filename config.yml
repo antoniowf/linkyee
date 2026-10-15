@@ -49,12 +49,12 @@ plugins:
   #   {{ vars.GithubLastCommitPlugin['owner/repo'].date }}
   #   {{ vars.GithubLastCommitPlugin['owner/repo'].sha }}
   - GithubLastCommitPlugin:
-      - ZhgChgLi/linkyee
+      - antoniowf/linkyee
 
   # Public profile stats (followers / following / public_repos). Use as:
   #   {{ vars.GithubProfilePlugin['user'].followers }}
   - GithubProfilePlugin:
-      - ZhgChgLi
+      - antoniowf
 
   # Latest items from any RSS / Atom feed (Medium, blogs, YouTube channels,
   # podcasts...). Returns an array of { title, url, date } per feed URL.
@@ -141,8 +141,8 @@ links:
      icon: "fa-solid fa-globe"
      text: "Website Prefeitura de Ilhabela<span class='link-button-text'></span>"
      url: "https://www.ilhabela.sp.gov.br"
-     alt: "Projeto Ilhabela Conectada - Wifi para todos"
-     title: "Projeto Ilhabela Conectada - Wifi para todos"
+     alt: "Website Prefeitura de Ilhabelas"
+     title: "Website Prefeitura de Ilhabela"
      target: "_blank"
 
   # → uses RSSFeedPlugin (latest blog post). `latest: true` opts into the
